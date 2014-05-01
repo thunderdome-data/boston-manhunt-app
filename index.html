@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Boston manhunt map</title>
+
+
+<!--this stylesheet has the CSS for both a map and a table-->
+<link rel="stylesheet" href="lib/css/map.css" />
+<script type="text/javascript">
+var event_number = 0;
+</script>
+
+</head>
+	<body>
+        <div id="boston-map-container">
+            <h4>Map of manhunt for Boston Marathon bombers</h4>
+            <p>The search for suspects in the marathon blasts reached a peak overnight Thursday, including a carjacking, a shootout and the death of one suspect.</p>
+        <div id="boston-map-explainer">
+        </div>
+        <div style="clear:both"></div>
+        <div id="nav">
+            <button id="prevBtn" class="btn" onclick="next_event(event_number,-1)">Previous</button>
+            <button id="nextBtn" class="btn" onclick="next_event(event_number,1)">Next</button>
+        </div>
+        <div style="clear:both"></div>
+            <div id="boston-map" class="map"></div>
+<div id="sourceCreds">
+        Credits: Vaughn Hagerty, Nelson Hsu, Yvonne Leow, Bobby Bonett / DFM
+    </div>
+        </div>
+
+<!--handlebars template to build map popups-->
+
+<script id="popupText" type="text/x-handlebars-template">
+<div id="p0" class="detail">
+	<div class="thetext">
+		<p class="title">{{time}} - {{title}}</p>
+		<p class="desc">{{address}}</p>
+		<p class="desc">{{description}}</p>
+	</div>
+	<div class="image">
+		<img src="lib/images/photos/{{image}}" />
+		<p class="credit" id="credit">{{caption}}</p>
+	</div>
+</div>
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="lib/js/handlebars-1.0.rc.1.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"
+  type="text/javascript"></script>
+<script type="text/javascript" src="lib/js/map.js"></script>
+<script src="https://spreadsheets.google.com/feeds/list/0AmZLmP_PGBQKdDhlS3RDVWlhN1NxZUNUQVZ1d2hJeVE/od6/public/values?alt=json-in-script&callback=loadGSContent"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37303540-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+	</body>
+</html>

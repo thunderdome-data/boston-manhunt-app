@@ -1,0 +1,108 @@
+/*prevent link in modal box from showing outline */
+body { padding: 0; }
+.map {
+	height: 240px;
+	width:590px;
+/*	margin-top: 1em; */
+	
+}
+/*New legend style */
+.thekey { padding: 0px 5px 3px 5px; border: 1px solid #999; background-color: #f5f5f5; width: 85px}
+.thekey p { margin: 0px 10px 5px 5px; font: 12px Arial; color: #000; }
+.thekey img { position: relative; top: 8px; margin-right: 3px; }
+
+.thekeyWider { padding: 0px 5px 3px 5px; border: 1px solid #999; background-color: #f5f5f5; width: 160px}
+.thekeyWider p { margin: 0px 10px 5px 5px; font: 10px Arial; color: #000; }
+.thekeyWider span { font: 10px Arial; color: #000; }
+
+.little-square { 
+	width: 15px !important;
+	height: 15px !important;
+	padding: 0;
+	margin: 4px 10px 0 0;
+	border: 2px solid black;
+	display: inline;
+	float: left;
+	filter: alpha(opacity=35); /* internet explorer */
+	-khtml-opacity: 0.35;      /* khtml, old safari */
+	-moz-opacity: 0.35;       /* mozilla, netscape */
+	opacity: 0.35;      
+}
+
+.infoWindow {
+	font: 10pt Arial;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+.gridContainer{
+	width: 30%;
+	margin-left: 5px;
+}
+.tableContainer{
+	padding-top: 10px;
+	width: 100%
+}
+#gridContainer > div {
+	float: left;
+}
+.tableCell {
+	height: 27px !important;
+}
+.floatLeft {
+	display: inline;
+	float: left;
+	margin-right: 5px;
+}
+.clearBoth {
+	clear: both;
+}
+.map-popup {
+/*    width: 300px; */
+    font: 10pt arial;
+
+}
+#boston-map-container{
+    width: 590px;
+    padding: 0;
+    font-family: arial;
+}
+#boston-map-explainer {
+    height: 230px !important;
+    margin-top: 15px;
+}
+#boston-map-container h4 {
+    font-size: 14pt;
+    padding: 5pt 0;
+    margin: 0;
+
+}
+#boston-map-container p {
+    padding: 0 0 5pt 0;
+    font-size: 11pt;
+    margin: 0;
+}
+.map-popup > p {
+    padding: 0 auto 4px auto;
+    margin-top: 0;
+
+}
+#sourceCreds {
+	font: italic 11px Arial; 
+	color: #999; 
+	margin: 10px 0 10px 0px; 
+	border-top: 1px solid #e2e2e2; 
+	padding: 5px 0 0 0;
+}
+.detail { width: 590px; }
+.image { float: left;}
+.title { font: bold 18px Arial ;}
+.thetext {width: 270px; float: left; margin-right: 20px; font: 14px Arial;}
+p { margin-top: 0px; margin-bottom: 10px; }
+button.btn { width: 70px; padding: 5px; border-radius: 4px; color: #FFF; background-color: #333; font: bold 12px Arial; text-align: center; float: left; cursor: pointer;}
+button.btn:hover { background-color: #666 }
+button#prevBtn { margin-right: 10px; }
+p.credit { text-align: right; font: 20pt Arial; color: #999; font-size: 9pt;}
+p#credit { text-align: right; font: 9pt Arial; color: #999; font-size: 9pt;}
+#nav {margin: -40px 0 40px 0}
