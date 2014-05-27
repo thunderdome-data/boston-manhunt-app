@@ -6,6 +6,10 @@ What is this?
 
 Google map and images showing series of events in hunt for Boston Marathon bombers. Fed via Google spreadsheet.
 
+Live demo: http://www.elpasotimes.com/newupdated/ci_23062944/map-manhunt-boston-marathon-bombing-suspects
+
+![Manhunt map](screenshots/boston.png)
+
 Credits
 ---------
 
